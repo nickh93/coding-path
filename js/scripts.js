@@ -19,11 +19,24 @@ $(document).ready(function() {
 
     } else {
 
-      //here we know that the user is into back-end development
-      if (software === "mobile") {
+        //here we know that the user is into back-end development
+        if (software === "mobile") {
 
-      //here we know that the user is into back-end and mobile development
-      $("#java").show();
+          //here we know that the user is into back-end and mobile development
+          if (size === "small") {
+
+            //here we know that the user is into back-end, mobile development and wants to work in a small firm
+            $("#java").show();
+            $("#small").show();
+          } else if (size === "large") {
+
+            //here we know that the user is into back-end, mobile development and wants to work in a large firm
+            $("#java").show();
+            $("#large").show();
+          } else {
+
+            $("#java").show();
+          }
 
     } else if (software === "web") {
 
