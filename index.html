@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Find Your Coding Path!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find your Coding Path!</h1>
+      <h2>Begin by taking this survey!</h2>
+      <form id="survey">
+        <div class="form-group"> <!--this is the first div that will wrap the whole form, not present in previous ones so might have to delete-->
+          <label>Are you intested in back-end development or front-end development?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="end" value="front">
+              Front-end (ie. layout, navigation, colors, design)
+            <label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="end" value="back">
+              back-end
+            <label>
+          </div>
+          <br>
+          <label for="os">In what operating system do you prefer working on?</label>
+          <select class="form-control" id="os">
+            <option>Mac</option>
+            <option>Windows</option>
+            <option>Linux</option>
+          </select>
+          <br>
+
+          <label>What size of firm are you most interested on wirking with?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="multinational">
+              Multinational
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="large">
+              Large
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="medium">
+              Medium
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="small">
+              Small
+            </label>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
