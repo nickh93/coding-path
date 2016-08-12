@@ -12,7 +12,7 @@ The site also includes some of the projects that I have completed so far, that I
 
 ## Setup/Installation Requirements
 
-* Visit the blog's site at https://nickh93.github.io/code-path
+* Visit the blog's site at https://nickh93.github.io/coding-path
 
 
 ## Known Bugs
