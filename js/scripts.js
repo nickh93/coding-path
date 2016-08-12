@@ -7,7 +7,7 @@ $(document).ready(function() {
     //input variables
     var end = $("input:radio[name=end]:checked").val();
     var software = $("#software").val();
-    var sitetype = $("input:radio[name=sitetype]:checked");
+    var sitetype = $("input:radio[name=sitetype]:checked").val();
     var size = $("#size").val();
 
     //begin branching for mathcing
@@ -15,7 +15,7 @@ $(document).ready(function() {
     if (end === "front") {
 
       //here we know that the user is into front-end development
-      alert("you shoukd do CSS!");
+      $("#css").show();
 
     } else {
 
@@ -23,13 +23,29 @@ $(document).ready(function() {
       if (software === "mobile") {
 
       //here we know that the user is into back-end and mobile development
-      alert("you should do Java/Android");
+      $("#java").show();
 
     } else if (software === "web") {
 
-      //here we know that the user is into back-end and web development
-      alert("you have the options of doing more")
-    } else if () 
+      //here we know that the user is into back-end and web development and therefore has more options
+        if (sitetype === "content") {
+
+          //here we know that the user is into back-end and web development and wants to build content-heavy sites
+          $("#php").show();
+
+        } else {
+
+          //here we know that the user is into back-end and web development and wants to build interactive site
+          $("#ruby").show();
+
+        }
+
+    } else {
+
+      //here we know that the user is into back-end and internal development
+      $("#c").show();
+
+    }
 
     }
   });
