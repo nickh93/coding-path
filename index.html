@@ -26,21 +26,30 @@
           </div>
           <br>
 
-          <label for="os">In what operating system do you prefer working on?</label>
-          <select class="form-control" id="os">
-            <option>Mac</option>
-            <option>Windows</option>
-            <option>Linux</option>
+          <label for="software">What type of development are you interested in doing?</label>
+          <select class="form-control" id="software">
+            <option>Mobile Development</option>
+            <option>Web Development</option>
+            <option>Internal Software Development</option>
           </select>
           <br>
 
-          <label>What size of firm are you most interested on wirking with?</label>
+          <label>Would you prefer building content-heavy sites or interactive sites?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="size" value="multinational">
-              Multinational
+              <input type="radio" name="sitetype" value="content">
+              Content Heavy
             </label>
           </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sitetype" value="interactive">
+              Interactive
+            </label>
+          </div>
+          <br>
+
+          <label>What size of firm are you most interested on wirking with?</label>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="large">
@@ -61,29 +70,15 @@
           </div>
           <br>
 
-          <label for="software">What type of development are you interested in doing?</label>
-          <select class="form-control" id="software">
-            <option>Mobile Development</option>
-            <option>Web Development</option>
-            <option>Internal Development</option>
+          <label for="os">In what operating system do you prefer working on?</label>
+          <select class="form-control" id="os">
+            <option>Mac</option>
+            <option>Windows</option>
+            <option>Linux</option>
           </select>
           <br>
 
-          <label>Would you prefer building content-heavy sites or interactive sites?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="sitetype" value="content">
-              Content Heavy
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="sitetype" value="interactive">
-              Interactive
-            </label>
-          </div>
         </div>
-
       </form>
     </div>
     <script src="js/jquery-3.1.0.js"></script>
