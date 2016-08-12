@@ -5,6 +5,8 @@ $(document).ready(function() {
     event.preventDefault();
 
     //input variables
+    var firstName = $("#fname").val();
+    var lastName = $("#lname").val();
     var end = $("input:radio[name=end]:checked").val();
     var software = $("#software").val();
     var sitetype = $("input:radio[name=sitetype]:checked").val();
@@ -61,5 +63,9 @@ $(document).ready(function() {
     }
 
     }
+
+    $(".fname-output").text(firstName);
+    $(".lname-output").text(lastName);
+
   });
 });

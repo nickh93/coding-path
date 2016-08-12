@@ -14,6 +14,13 @@
       <p>Here are some questions that will help us understand your interests better so that you canbe matched with the right coding language for you based on your responses. From there, you can click on the image that will appear below where you can do some more exploring on them to help you figure out if this is indeed the language for you. Our suggestions are based on your answers to the questions below but you may have other interests tha we did not cosider so make sure you are clear about your goals and your intentions before you pick your path! But don't worry, you will likely have to learn other languages as your career advances so whatever you choose now, will not dictate your future from now on.</p>
       <form id="survey">
         <div class="form-group"> <!--this is the first div that will wrap the whole form, not present in previous ones so might have to delete-->
+          <label for="fname">First Name</label>
+          <input id="fname" class="form-control" type="text">
+          <br>
+          <label for="lname">Last Name</label>
+          <input id="lname" class="form-control" type="text">
+          <br>
+
           <label>Are you intested in back-end development or front-end development?</label>
           <div class="radio">
             <label>
@@ -87,7 +94,7 @@
 
       <div id="css">
 
-        You you should do CSS/Design!
+        <span class="fname-output"></span> <span class="lname-output"></span>, you should do CSS/Design!
 
         <br>
 
@@ -98,7 +105,7 @@
       </div>
       <div id="java">
 
-        You should go for Java/Android! <br>
+        <span class="fname-output"></span> <span class="lname-output"></span>, you should go for Java/Android! <br>
 
         <a href="https://developer.android.com/guide/index.html"><img src="img/Java-Android.jpg"></a> <br>
 
@@ -111,7 +118,7 @@
       </div>
       <div id="php">
 
-        You should go for PHP/Drupal <br>
+        <span class="fname-output"></span> <span class="lname-output"></span>, you should go for PHP/Drupal <br>
 
         <a href="https://en.wikipedia.org/wiki/Drupal"> <img src="img/drupal-php.jpg"></a> <br>
 
@@ -120,7 +127,7 @@
       </div>
       <div id="ruby">
 
-        You should go for Ruby/Rails <br>
+        <span class="fname-output"></span> <span class="lname-output"></span>, you should go for Ruby/Rails <br>
 
         <a href="https://en.wikipedia.org/wiki/Ruby_on_Rails"><img src="img/ruby.jpg"></a> <br>
 
@@ -129,7 +136,7 @@
       </div>
       <div id="c">
 
-        You should go for C#/.NET <br>
+        <span class="fname-output"></span> <span class="lname-output"></span>, you should go for C#/.NET <br>
 
         <a href="https://msdn.microsoft.com/en-us/library/z1zx9t92.aspx"><img src="img/c.jpg"></a> <br>
 
