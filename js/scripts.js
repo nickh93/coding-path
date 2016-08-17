@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     event.preventDefault();
 
+    $(".results").children().hide();
     //input variables
     var firstName = $("#fname").val();
     var lastName = $("#lname").val();
@@ -21,46 +22,46 @@ $(document).ready(function() {
 
     } else {
 
-        //here we know that the user is into back-end development
-        if (software === "mobile") {
+      //here we know that the user is into back-end development
+      if (software === "mobile") {
+        debugger;
+        //here we know that the user is into back-end and mobile development
+        if (size === "small") {
 
-          //here we know that the user is into back-end and mobile development
-          if (size === "small") {
+          //here we know that the user is into back-end, mobile development and wants to work in a small firm
+          $("#java").show();
+          $("#small").show();
+        } else if (size === "large") {
 
-            //here we know that the user is into back-end, mobile development and wants to work in a small firm
-            $("#java").show();
-            $("#small").show();
-          } else if (size === "large") {
-
-            //here we know that the user is into back-end, mobile development and wants to work in a large firm
-            $("#java").show();
-            $("#large").show();
-          } else {
-
-            $("#java").show();
-          }
-
-    } else if (software === "web") {
-
-      //here we know that the user is into back-end and web development and therefore has more options
-        if (sitetype === "content") {
-
-          //here we know that the user is into back-end and web development and wants to build content-heavy sites
-          $("#php").show();
-
+          //here we know that the user is into back-end, mobile development and wants to work in a large firm
+          $("#java").show();
+          $("#large").show();
         } else {
 
-          //here we know that the user is into back-end and web development and wants to build interactive site
-          $("#ruby").show();
-
+          $("#java").show();
         }
 
-    } else {
+      } else if (software === "web") {
 
-      //here we know that the user is into back-end and internal development
-      $("#c").show();
+        //here we know that the user is into back-end and web development and therefore has more options
+          if (sitetype === "content") {
 
-    }
+            //here we know that the user is into back-end and web development and wants to build content-heavy sites
+            $("#php").show();
+
+          } else {
+
+            //here we know that the user is into back-end and web development and wants to build interactive site
+            $("#ruby").show();
+
+          }
+
+      } else {
+
+        //here we know that the user is into back-end and internal development
+        $("#c").show();
+
+      }
 
     }
 
